@@ -1,6 +1,14 @@
 defmodule Cards do
   def create_deck do
-    ["Ace", "Two", "Three"]
+    values = ["Ace", "Two", "Three", "Four", "Five"]
+    suits = ["Spades", "Hearts", "Diamonds", "Clubs"]
+
+    for suit <- suits do
+      for value <- values do
+        "#{value} of #{suit}"
+      end
+    end
+    |> List.flatten
   end
 
   def contains?(deck, card) do
