@@ -1,5 +1,12 @@
 # [The Complete Elixir and Phoenix Bootcamp](https://www.udemy.com/the-complete-elixir-and-phoenix-bootcamp-and-tutorial)
 
+  - We played with [Lists][docs-list], let's learn about [Tuples][docs-tuple]:
+
+    > "like an array, where each index has a very special meaning"
+
+    + the ordering / contract is in the developer's head!
+    + can be seen as a key/value pair, where the key is the index
+
   - [List comprehension](https://en.wikipedia.org/wiki/List_comprehension)
     - create a list based on existing lists
     - _distinct_ from the use of map and filter functions
@@ -11,3 +18,7 @@
     –José Valim
 
   - [Reference repo](https://github.com/StephenGrider/ElixirCode)
+
+
+  [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
+  [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
