@@ -30,6 +30,7 @@
         - matches the number of values / elements
     + enables you to _avoid_ writing `if` statements
       * pattern matching in `case` statements
+    + pattern matching can also be done directly in the argument list
 
   1. The Elixir Ecosystem
     + **Code** we write » _fed into_ » **Elixir** » _transpiled into_ » **Erlang** » _compiled and executed on_ » **BEAM**
@@ -148,11 +149,15 @@
         - has no ability to attach any functions to it
         - it can only hold some primitive data
       * A single location to store all the data inside of our app
+      * The [update syntax][getting-started-structs] works best, as properties on a `Struct` are already defined
 
     + `List`
       * Acessing the first X values from an arbitrarily long list
         - the head and tail split pattern `[h | t]`
         - extended to `[a, b, c | _tail]`
+
+    + `Tuple`
+      * use a `Tuple` instead of a `List` when the index has particular semantic
 
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
