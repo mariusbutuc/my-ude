@@ -48,7 +48,29 @@
     + Elixir provides a friendly warning at compile time
     + Solution: underscore them: `_` or `_reason`
 
+  1. The Pipe operator
+    + [Joe Armstrong's explanation of the pipe operator][a-week-with-elixir] made the most sense for me:  
 
+      > This is the recessive monadic gene of Prolog. The gene was dominant in Prolog, recessive in Erlang (son-of-prolog) but re-emerged in Elixir (son-of-son-of-prolog).
+      > 
+      > `x |> y*` means call `x` then take the output of `x` and add it as an extra argument to `y` in the first argument position.
+      > 
+      > So
+      > ```elixir
+      > x(1,2) |> y(a,b,c) 
+      > ```
+      > 
+      > Means
+      > ```elixir 
+      > newvar = x(1,2); 
+      > y(newvar,a,b,c);
+      > ```
+
+    + the key is to write functions that take consistent first arguments
+      * the return of the previous function gets applied as the first argument in the subsequent function
+
+
+  [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
   [elixir-functions]: https://elixirforum.com/t/there-are-no-methods-in-elixir-just-functions/2451

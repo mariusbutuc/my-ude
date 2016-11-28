@@ -28,5 +28,11 @@ defmodule Cards do
     end
   end
 
+  def create_hand(hand_size) do
+    create_deck
+    |> shuffle
+    |> deal(hand_size)
+  end
+
   defdelegate shuffle(deck), to: Enum
 end
