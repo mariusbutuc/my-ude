@@ -19,10 +19,39 @@
     + the ordering / contract is in the developer's head!
     + can be seen as a key/value pair, where the key is the index
 
+  1. Pattern Matching
+
+    > Elixir's replacement for variable assignment
+
+    + Elixir, as a language governed by its design
+    + `=` starts the pattern matching sequence
+      * create a mirror structure on the left hand side
+        - matches the data structure
+        - matches the number of values / elements
+    + enables you to _avoid_ writing `if` statements
+      * pattern matching in `case` statements
+
+  1. The Elixir Ecosystem
+    + **Code** we write » _fed into_ » **Elixir** » _transpiled into_ » **Erlang** » _compiled and executed on_ » **BEAM**
+    + leveraging underlying Erlang modules:
+      * `:erlang.term_to_binary/1`
+      * `:erlang.binary_to_term/1`
+
+  1. Atoms
+    + personally, I prefer the definition from [Programming Elixir 1.3][programming-elixir]
+
+      > Atoms are constants that represent something’s name. […]  
+      > An atom’s name is its value. Two atoms with the same name will always compare as being equal, even if they were created by different applications on two computers separated by an ocean.
+
+  1. Unused variables
+    + Elixir provides a friendly warning at compile time
+    + Solution: underscore them: `_` or `_reason`
+
 
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
   [elixir-functions]: https://elixirforum.com/t/there-are-no-methods-in-elixir-just-functions/2451
   [list-comprehension]: https://en.wikipedia.org/wiki/List_comprehension
   [on-udemy]: https://www.udemy.com/the-complete-elixir-and-phoenix-bootcamp-and-tutorial
+  [programming-elixir]: https://pragprog.com/book/elixir13/programming-elixir-1-3
   [reference-repo]: https://github.com/StephenGrider/ElixirCode
