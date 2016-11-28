@@ -69,11 +69,18 @@
     + the key is to write functions that take consistent first arguments
       * the return of the previous function gets applied as the first argument in the subsequent function
 
+  1. Documentation
+    + [ExDoc][ex_doc]
+      * `@moduledoc` for module documentation
+      * `@doc` for function documentation
+      * `mix docs` to generate
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
   [elixir-functions]: https://elixirforum.com/t/there-are-no-methods-in-elixir-just-functions/2451
+  [ex_doc]: https://github.com/elixir-lang/ex_doc
   [list-comprehension]: https://en.wikipedia.org/wiki/List_comprehension
   [on-udemy]: https://www.udemy.com/the-complete-elixir-and-phoenix-bootcamp-and-tutorial
   [programming-elixir]: https://pragprog.com/book/elixir13/programming-elixir-1-3
