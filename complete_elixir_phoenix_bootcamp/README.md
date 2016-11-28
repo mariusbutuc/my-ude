@@ -135,18 +135,24 @@
       * gets passed around through a Main Pipeline
         - a series of small functions, that transform the data
 
-  1. Structs for Data Modeling
-    + `Struct`s are `Map`s plus
-      * compile-time checks
-      * default values
-    + Looks a lot like a `Map`; why would we use a `Struct` over a `Map`?
-      * a `Struct` enforces that the only properties that can be stored are the ones defined in the module
-      * a normal `Map` is happy to let you insert any different property that you'd like
-    + Why not add functions (methods / properties / instance methods) to structs?
-      * from and FP perspective
+  1. Data Modeling
+    + `Struct`
+      * it's just a `Map` plus
+        - compile-time checks
+        - default values
+      * Looks a lot like a `Map`; why would we use a `Struct` over a `Map`?
+        - a `Struct` enforces that the only properties that can be stored are the ones defined in the module
+        - a normal `Map` is happy to let you insert any different property that you'd like
+      * Why not add functions (methods / properties / instance methods) to structs? From an FP perspective
         - it's a Map under the hood
         - has no ability to attach any functions to it
         - it can only hold some primitive data
+      * A single location to store all the data inside of our app
+
+    + `List`
+      * Acessing the first X values from an arbitrarily long list
+        - the head and tail split pattern `[h | t]`
+        - extended to `[a, b, c | _tail]`
 
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
