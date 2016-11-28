@@ -36,6 +36,7 @@
     + leveraging underlying Erlang modules:
       * `:erlang.term_to_binary/1`
       * `:erlang.binary_to_term/1`
+      * `:file.format_error/1` —[thanks @pragdave][programming-elixir]
 
   1. Atoms
     + personally, I prefer the definition from [Programming Elixir 1.3][programming-elixir]
