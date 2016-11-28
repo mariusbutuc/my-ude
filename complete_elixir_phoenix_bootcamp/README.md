@@ -75,8 +75,21 @@
       * `@doc` for function documentation
       * `mix docs` to generate
 
+  1. Testing
+    + first-class citizen: fully featured out of the box
+    + `mix test`
+    1. [Doctests][docs-doctests]
+      * write docs and tests at the same time
+      * examples in documentation stay up to date
+      * Scenario: explain to another engineer the simplest case of using a given function
+      * Additional assertions are _possible_, but you generally want to make only one assertion about the very last line: this is a documentation test about the `contains?/2` function, and not about `create_deck/0`. So in practice we want to have just one, very small, very targeted assertion about the given function.
+      * Ran by the `doctest Cards` line inside out test file
+        - parse the module
+        - run any examples as an actual test
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
+  [docs-doctests]: http://elixir-lang.org/getting-started/mix-otp/docs-tests-and-with.html#doctests
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
   [elixir-functions]: https://elixirforum.com/t/there-are-no-methods-in-elixir-just-functions/2451
