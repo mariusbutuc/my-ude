@@ -86,6 +86,13 @@
       * Ran by the `doctest Cards` line inside out test file
         - parse the module
         - run any examples as an actual test
+    1. Case Tests
+      * What behaviour do we want to test?
+      * `assert` versus `refute`
+      * Elixir's functional programming style makes it so easy to test
+        - create basic object, representing our working data
+        - pass it off to the function we're testing
+        - do some basic checks on the returned object
 
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
