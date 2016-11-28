@@ -78,7 +78,7 @@
   1. Testing
     + first-class citizen: fully featured out of the box
     + `mix test`
-    1. [Doctests][docs-doctests]
+    1. [Doctests][getting-started-doctests]
       * write docs and tests at the same time
       * examples in documentation stay up to date
       * Scenario: explain to another engineer the simplest case of using a given function
@@ -94,14 +94,41 @@
         - pass it off to the function we're testing
         - do some basic checks on the returned object
 
+  1. Maps
+    + key-value stores, similar to Ruby hashes, or Javascript objects
+        ```elixir
+        colours = %{primary: "red", secondary: "blue"}
+        ```
+
+    + accessing properties
+      * dot notation
+      * pattern matching
+    + updating values
+      * immutable data: to update means to create a new data structure with the modifications
+      * two ways of achieving this:
+        - with a function: [`Map.put/3`][docs-map], [etc][map-update-syntax]
+        - leveraging the [built in syntax][getting-started-structs] —[similar to Elm][elm-update-records]
+
+          ```elixir
+          %{colours | primary: "green"}
+          ```
+
+          + only works for existing keys:
+
+            > the VM is aware that **no new keys will be added** to the struct, allowing the maps underneath to share their structure in memory.
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
-  [docs-doctests]: http://elixir-lang.org/getting-started/mix-otp/docs-tests-and-with.html#doctests
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
+  [docs-map]: http://elixir-lang.org/docs/stable/elixir/Map.html
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
   [elixir-functions]: https://elixirforum.com/t/there-are-no-methods-in-elixir-just-functions/2451
+  [elm-update-records]: http://elm-lang.org/docs/records#updating-records
   [ex_doc]: https://github.com/elixir-lang/ex_doc
+  [getting-started-doctests]: http://elixir-lang.org/getting-started/mix-otp/docs-tests-and-with.html#doctests
+  [getting-started-structs]: http://elixir-lang.org/getting-started/structs.html#accessing-and-updating-structs
   [list-comprehension]: https://en.wikipedia.org/wiki/List_comprehension
+  [map-update-syntax]: https://dockyard.com/blog/2016/03/07/til-elixir-maps-have-built-in-syntax-for-updating
   [on-udemy]: https://www.udemy.com/the-complete-elixir-and-phoenix-bootcamp-and-tutorial
   [programming-elixir]: https://pragprog.com/book/elixir13/programming-elixir-1-3
   [reference-repo]: https://github.com/StephenGrider/ElixirCode
