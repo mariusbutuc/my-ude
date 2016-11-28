@@ -117,6 +117,18 @@
 
             > the VM is aware that **no new keys will be added** to the struct, allowing the maps underneath to share their structure in memory.
 
+  1. Keyword Lists
+    + `List` and `Tuple` merged into one
+      * lists: like arrays, can be used for an arbitrary number of elements
+      * tuples: like arrays, where each index has a special meaning to us
+    + a list that contains tuples
+      ```elixir
+      colours = [{:primary, "red"}, {:secondary, "blue"}]
+      # or
+      colours = [primary: "red", secondary: "blue"]
+      ```
+    + versus `Map`: there can be duplicate keys
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
