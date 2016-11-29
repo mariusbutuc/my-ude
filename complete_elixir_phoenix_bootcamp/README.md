@@ -159,8 +159,16 @@
     + `Tuple`
       * use a `Tuple` instead of a `List` when the index has particular semantic
 
+  1. First-class functions
+    + in Elixir, referring to a function—`mirror_row`—it will call it by default
+    + to pass a reference to a function, we use [a special syntax][course-first-class-functions]
+    + Elixir provides guidance even through its compile error
+
+      > […] invalid args for `&`, expected an expression in the format of `&Mod.fun/arity`, `&local/arity` or a capture containing at least one argument as `&1`
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
+  [course-first-class-functions]: http://elixir-lang.org/crash-course.html#first-class-functions
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
   [docs-map]: http://elixir-lang.org/docs/stable/elixir/Map.html
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html

@@ -3,6 +3,17 @@ defmodule Identicon do
     input
     |> hash_input
     |> pick_colour
+    |> build_grid
+  end
+
+  def build_grid(%Identicon.Image{hex: hex}) do
+    hex
+    |> Enum.chunk(3)
+    |> Enum.map(&mirror_row/1)
+  end
+
+  def mirror_row([first, second | _] = row) do
+    row ++ [second, first]
   end
 
   def pick_colour(
