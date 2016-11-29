@@ -1,20 +1,22 @@
-# Discuss
+# Discuss learnings of Phoenix
 
-To start your Phoenix app:
+  1. intro
+    * `mix phoenix.new discuss`
+    * `mix ecto.create`
+    * `mix phoenix.server`
+    * live reload, enabled by default
+  1. Server Side Templating
+    * versus Single Page App
+  1. Templates versus Layouts
+    * Layout: base template, shared across pages
+    * Bootstrap: baked in by default, but dated
+    * Alternative: [Materialize CSS][materialize]
+      - CSS only, no need for JS, yet
+  1. MVC, or how to make muffins
+    * not limited to OOP
+      - batter: model — the content that the user syncs their teeth into
+      - muffin pan: view — take that content and shovel it into the view, to make it look good
+      - cook: controller — take the two components and make them work together: what type of muffins am I making in the first place?
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+  [materialize]: http://materializecss.com/getting-started.html
