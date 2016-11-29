@@ -38,6 +38,7 @@
       * `:erlang.term_to_binary/1`
       * `:erlang.binary_to_term/1`
       * `:file.format_error/1` —[thanks @pragdave][programming-elixir]
+      * `egd` —the [erlang graphical drawer][erlang-egd]
 
   1. Atoms
     + personally, I prefer the definition from [Programming Elixir 1.3][programming-elixir]
@@ -170,6 +171,12 @@
     + we can't mix clauses that expect a different number of arguments. A  function always has a fixed arity.
     + anonymous functions are closures, similar to lambdas in Ruby
 
+  1. A working Identicon program
+    + the pipe operator
+    + working with Erlang ([`egd`][erlang-egd])
+    + `Enum`
+    + anonymous functions
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
   [closure-vs-named-function]: http://stackoverflow.com/a/18023790/341929
@@ -179,6 +186,7 @@
   [docs-tuple]: http://elixir-lang.org/docs/stable/elixir/Tuple.html
   [elixir-functions]: https://elixirforum.com/t/there-are-no-methods-in-elixir-just-functions/2451
   [elm-update-records]: http://elm-lang.org/docs/records#updating-records
+  [erlang-egd]: http://erlang.org/doc/man/egd.html
   [ex_doc]: https://github.com/elixir-lang/ex_doc
   [getting-started-doctests]: http://elixir-lang.org/getting-started/mix-otp/docs-tests-and-with.html#doctests
   [getting-started-structs]: http://elixir-lang.org/getting-started/structs.html#accessing-and-updating-structs
