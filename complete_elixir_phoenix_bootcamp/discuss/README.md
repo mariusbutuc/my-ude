@@ -33,6 +33,10 @@
     * new routes must map to a method in the controller » add new _method_ in _controller_…
     * need to show a form to the user » new _template_, that contains the form
     * need to translate the data in the form to something we can persist in the DB » create a `Topic` _model_
+  1. Routing to the controller
+    * restful: `new`, `create`, `index`, `delete`, `edit`, `update`
+  1. Setting up the controller
+    * `Discuss.TopicController`—singular
 
 
   [materialize]: http://materializecss.com/getting-started.html
