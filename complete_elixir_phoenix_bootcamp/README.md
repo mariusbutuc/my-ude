@@ -166,8 +166,13 @@
 
       > […] invalid args for `&`, expected an expression in the format of `&Mod.fun/arity`, `&local/arity` or a capture containing at least one argument as `&1`
 
+  1. [Anonymous Functions][closure-vs-named-function]
+    + we can't mix clauses that expect a different number of arguments. A  function always has a fixed arity.
+    + anonymous functions are closures, similar to lambdas in Ruby
+
 
   [a-week-with-elixir]: http://joearms.github.io/2013/05/31/a-week-with-elixir.html#head_7
+  [closure-vs-named-function]: http://stackoverflow.com/a/18023790/341929
   [course-first-class-functions]: http://elixir-lang.org/crash-course.html#first-class-functions
   [docs-list]: http://elixir-lang.org/docs/stable/elixir/List.html
   [docs-map]: http://elixir-lang.org/docs/stable/elixir/Map.html
