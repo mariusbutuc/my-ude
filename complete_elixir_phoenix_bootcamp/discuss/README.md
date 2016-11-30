@@ -47,6 +47,16 @@
       - leverage the direct access to `web/web.ex` to share behaviour
   1. Phoenix's `Conn` Struct
     * `%Plug.Conn{}` – the total focal point of everything Phoenix is doing
+  1. Models in Phoenix
+    * Two requirements
+      - declare a schema: enable Phoenix to understand what's happening inside of Phoenix
+      - add validation logic: form errors will be displayed based on these
+        + `changeset/2` function
+          * `struct` represents our current state
+          * `params` represents the desired state
+        + `#Ecto.Changeset` struct
+          * `changes` from where the record is now to where it needs to be
+        + `validate_required`
 
 
   [materialize]: http://materializecss.com/getting-started.html
