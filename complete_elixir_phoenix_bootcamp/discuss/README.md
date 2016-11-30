@@ -37,6 +37,14 @@
     * restful: `new`, `create`, `index`, `delete`, `edit`, `update`
   1. Setting up the controller
     * `Discuss.TopicController`—singular
+  1. Code reuse with `import`, `alias` and `use`
+    * OOP Code reuse: class inheritance—`TopicController < ControllerBaseClass`
+    * FP, Elixir-specific:
+      - `import`: functions from the imported module are now part of the current module's public interface
+      - `alias`: internally, lookup function names in the aliased module; _not_exposed as part of current module's public interface
+      - `use`: used for very fancy setup… complicated?
+    * in Phoenix
+      - leverage the direct access to `web/web.ex` to share behaviour
 
 
   [materialize]: http://materializecss.com/getting-started.html
