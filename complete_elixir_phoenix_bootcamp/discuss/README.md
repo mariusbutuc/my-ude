@@ -45,6 +45,8 @@
       - `use`: used for very fancy setup… complicated?
     * in Phoenix
       - leverage the direct access to `web/web.ex` to share behaviour
+  1. Phoenix's `Conn` Struct
+    * `%Plug.Conn{}` – the total focal point of everything Phoenix is doing
 
 
   [materialize]: http://materializecss.com/getting-started.html
